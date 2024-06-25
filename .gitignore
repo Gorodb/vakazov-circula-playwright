@@ -1,0 +1,8 @@
+allure-results.zip
+.DS_Store
+.idea
+allure-report
+allure-results
+node_modules
+.env
+.DS_Store

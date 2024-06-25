@@ -1,0 +1,21 @@
+export const signUpLocators = {
+	// form
+	firstName: page.locator(`[name='firstname']`),
+	lastName: page.locator(`[name='lastname']`),
+	email: page.locator(`[name='email']`),
+	phone: page.locator(`[name='phoneNumber']`),
+	password: page.locator(`[name='password']`),
+	isPasswordMinCharacters: page.locator(``),
+	isPasswordWithLetter: page.locator(``),
+	isPasswordWithNumber: page.locator(``),
+	companyName: page.locator(`[name='organizationName']`),
+	countrySelector: page.locator(`#registration-country-input`),
+	countrySelectorWithValue: (country: string) => page.locator(`#registration-country-input[value='${country}']`),
+	countriesInDropdown: page.locator(`[data-testid='autocomplete-menu-portal'] li`),
+	countryInDropdownByName: (country: string) => page.locator(`[data-testid='autocomplete-menu-portal'] li :text('${country}')`),
+	countryInDropdownByIndex: (index: string | number) => page.locator(`li#registration-country-item-${index}`),
+	howDidYouHearAboutUs: page.locator(`textarea`),
+	tosCheckbox: page.locator(`[name='acceptTos']`),
+	productUpdatesCheckbox: page.locator(`[name='sendNewsletter']`),
+	submitButton: page.locator(`button[type='submit']`),
+}
